@@ -1,0 +1,13 @@
+# Sample configuration for gpt-cli
+# You can copy this file to one of the supported locations and edit values:
+# - This directory: GPT/gpt_cli.toml
+# - %APPDATA%\gpt-cli\config.toml
+# - %USERPROFILE%\.gpt-cli.toml
+
+# OpenAI API key
+api_key = ""
+
+# Default model if not specified elsewhere
+default_model = "gpt-4o-mini"
+
+

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpt-cli"
+version = "0.2.0"
+description = "CLI for prompting ChatGPT from the terminal"
+readme = "GPT/README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "openai>=1.40.0,<2",
+  "tomli>=2.0.1; python_version < '3.11'",
+]
+
+[project.scripts]
+gpt-cli = "GPT.gpt_cli:run"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["GPT"]
+
+
